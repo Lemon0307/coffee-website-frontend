@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.navbar {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    background-color: #39CC53;
+}
+.navbar a {
+    font-family: 'Roboto', sans-serif;
+}
+.navbar a:visited {
+    color: white;
+}
+
+.nv-group-1 input {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nv-group-1 a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.search-btn {
+    color: black;
+}
