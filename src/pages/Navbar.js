@@ -15,7 +15,7 @@ const Navbar = () => {
                 <form action={searchProduct} method="POST">
                     <input type="search" />
                     <button type="submit" className="search-btn">Search</button>
-                    <Link to="/">Products</Link>
+                    <Link to="/products/">Products</Link>
                     {/* Not logged in */}
                     <Link to="/login">Login</Link>
                     {/* Logged in */}

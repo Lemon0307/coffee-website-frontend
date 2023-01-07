@@ -7,7 +7,7 @@ const Products = () => {
     const [products, setProducts] = useState([{}])
 
     useEffect(() => {
-        fetch("http://localhost:8000/").then(
+        fetch("http://localhost:8000/products").then(
             res => res.json()
         ).then(
             data => {
@@ -21,7 +21,7 @@ const Products = () => {
 
     return (
         <div className="content">
-            <h1>Welcome!</h1>
+            <h1>The latest and best coffee products</h1>
         <div className="graphic">
             <h1>graphic</h1>
         </div>
