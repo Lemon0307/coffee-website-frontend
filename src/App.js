@@ -6,6 +6,7 @@ import ForgotPass from './pages/user/ForgotPass';
 import Payment from './pages/payment/Payment';
 import Dashboard from './pages/admin/Dashboard';
 import Navbar from './pages/Navbar';
+import Home from './pages/Home';
 
 import {
   BrowserRouter as Router,
@@ -19,6 +20,7 @@ const App = () => {
       <Router>
         <Navbar />
         <Routes>
+          <Route path="/" element={<Home />}/>
           <Route path="/products/" element={<Products />}/>
           <Route path="/login" element={<Login />}/>
           <Route path="/sign-up" element={<SignUp />}/>
