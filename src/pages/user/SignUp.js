@@ -11,8 +11,6 @@ const SignUp = () => {
     const [password, setPassword] = useState('')
     const [message, setMessage] = useState('')
 
-    const history = useNavigate();
-
     const handleSubmit = async (event) => {
         event.preventDefault();
         await fetch('http://localhost:8000/auth/sign-up', {
@@ -27,8 +25,9 @@ const SignUp = () => {
                 email: email,
                 password: password,
             }),
+            redirect: 'follow'
         }).then(res => res.json())
-        .then(result => history.push(result.url))
+        .then(result => <Navigate to={result.url}/>)
     }
     return (
         <div>
